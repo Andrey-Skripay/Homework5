@@ -46,6 +46,21 @@ public class Main {
                     System.out.println( year +" год не является високосным.");
                 }
 
+                // Задача 4
+
+                int deliveryDistance = 95;
+                int day = 1;
+                if (deliveryDistance > 20  ) {
+                    day++;
+                }
+                if (deliveryDistance > 60 && deliveryDistance <= 100 ) {
+                     day++;
+                } else {
+                    System.out.println(" Доставки нет.");
+                }
+                System.out.println("Потребуется дней:" + day);
+
+
         }
     }
 }
