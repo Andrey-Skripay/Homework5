@@ -3,15 +3,14 @@ public class Main {
         // Задача 1
 
         int clientOS = 3;
-        switch (clientOS) {
-            case 1:
-                System.out.println("Установите версию приложения для Android по ссылке.");
-                break;
-            case 0:
-                System.out.println("Установите версию приложения для iOS по ссылке.");
-                break;
-            default:
-                System.out.println("Нет приложения для такой системы.");
+        if (clientOS == 0) {
+            System.out.println("Установите версию приложения для Android по ссылке.");
+        } else if (clientOS == 1) {
+            System.out.println("Установите версию приложения для iOS по ссылке.");
+        } else {
+            System.out.println("Нет приложения для такой системы.");
+
+
 
                 // Задача 2
 
