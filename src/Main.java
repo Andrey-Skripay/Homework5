@@ -14,26 +14,19 @@ public class Main {
 
                 // Задача 2
 
-                int clientOS2 = 1;
-                int clientDeviceYear = 2016;
-                boolean liteVersion = clientDeviceYear < 2015;
+            int clientOS1 = 1;
+            int clientDeviceYear = 2014;
 
-                if (clientOS2 == 1) {
-                    if (liteVersion) {
-                        System.out.println("Установите облегченную версию приложения для Android по ссылке.");
-                    } else {
-                        System.out.println("Установите версию приложения для Android по ссылке. ");
-                    }
-
-                } else if (clientOS2 == 0) {
-                    if (liteVersion) {
-                        System.out.println("Установите облегченную версию приложения для iOS по ссылке.");
-                    } else {
-                        System.out.println("Установите версию приложения для iOS по ссылке. ");
-                    }
-                } else {
-                    System.out.println("Нет приложения для такой системы.");
-                }
+            if (clientDeviceYear < 2015 && clientOS1 != 0 ) {
+                System.out.println("Установите облегченную версию приложения для iOS по ссылке");
+            } else if (clientOS1 == 1) {
+                System.out.println("Установите версию приложения для iOS по ссылке.");
+            }
+            if (clientDeviceYear < 2015 &&  clientOS1 != 1 ) {
+                System.out.println("Установите облегченную версию приложения для Android по ссылке");
+            } else if (clientOS1 == 0) {
+                System.out.println("Установите версию приложения для Android по ссылке.");
+            }
 
                 // Задача 3
 
@@ -47,17 +40,24 @@ public class Main {
 
                 // Задача 4
 
-                int deliveryDistance = 95;
+                int deliveryDistance =615;
                 int day = 1;
-                if (deliveryDistance > 20  ) {
-                    day++;
+
+                if (deliveryDistance <= 20  ) {
+                    day = 1;
+                    System.out.println("Потребуется деней:" + day);
+                }
+                if (deliveryDistance > 20 && deliveryDistance <= 60){
+                    day = 2;
+                    System.out.println("Потребуется деней:" + day);
                 }
                 if (deliveryDistance > 60 && deliveryDistance <= 100 ) {
-                     day++;
-                } else {
+                     day = 3;
+                    System.out.println("Потребуется деней:" + day);
+
+                } else if (deliveryDistance >= 100) {
                     System.out.println(" Доставки нет.");
                 }
-                System.out.println("Потребуется дней:" + day);
 
                 // Задача 5
 
@@ -86,12 +86,6 @@ public class Main {
                        break;
                    default:
                        System.out.println("Условие не выполняется");
-
-
-
-
-
-
                }
         }
     }
