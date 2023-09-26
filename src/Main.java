@@ -9,13 +9,14 @@ public class Main {
             System.out.println("Установите версию приложения для iOS по ссылке.");
         } else {
             System.out.println("Нет приложения для такой системы.");
+        }
 
 
 
                 // Задача 2
 
-            int clientOS1 = 1;
-            int clientDeviceYear = 2014;
+            int clientOS1 = 0;
+            int clientDeviceYear = 2016;
 
             if (clientDeviceYear < 2015 && clientOS1 != 0 ) {
                 System.out.println("Установите облегченную версию приложения для iOS по ссылке");
@@ -40,7 +41,7 @@ public class Main {
 
                 // Задача 4
 
-                int deliveryDistance =615;
+                int deliveryDistance = 55;
                 int day = 1;
 
                 if (deliveryDistance <= 20  ) {
@@ -87,6 +88,5 @@ public class Main {
                    default:
                        System.out.println("Условие не выполняется");
                }
-        }
     }
 }
