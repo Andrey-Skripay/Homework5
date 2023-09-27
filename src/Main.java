@@ -16,16 +16,16 @@ public class Main {
                 // Задача 2
 
             int clientOS1 = 0;
-            int clientDeviceYear = 2016;
+            int clientDeviceYear = 2012;
 
-            if (clientDeviceYear < 2015 && clientOS1 != 0 ) {
+            if (clientDeviceYear < 2015 && clientOS1 != 1 ) {
                 System.out.println("Установите облегченную версию приложения для iOS по ссылке");
-            } else if (clientOS1 == 1) {
+            } else if (clientOS1 == 0) {
                 System.out.println("Установите версию приложения для iOS по ссылке.");
             }
-            if (clientDeviceYear < 2015 &&  clientOS1 != 1 ) {
+            if (clientDeviceYear < 2015 &&  clientOS1 != 0 ) {
                 System.out.println("Установите облегченную версию приложения для Android по ссылке");
-            } else if (clientOS1 == 0) {
+            } else if (clientOS1 == 1) {
                 System.out.println("Установите версию приложения для Android по ссылке.");
             }
 
